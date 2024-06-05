@@ -1,0 +1,44 @@
+/* Estilos para o modo diurno */
+body {
+    background-color: white;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Estilos para o modo noturno */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Estilos para os botões */
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#toggle-dark-mode {
+    position: fixed;
+    top: 20px;
+    right: 60px;
+}
+
+#translate-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#toggle-dark-mode i, #translate-button i {
+    color: black;
+}
+
+body.dark-mode #toggle-dark-mode i, body.dark-mode #translate-button i {
+    color: white;
+}
